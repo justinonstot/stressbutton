@@ -5,7 +5,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var viewModel = AnxietyViewModel()
     @State private var showDashboard = false
-    @StateObject private var audioService = AudioService.shared
+    private let audioService = AudioService.shared
 
     var body: some View {
         NavigationStack {
